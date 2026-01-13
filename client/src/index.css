@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep space/night sky base */
+    --background: 240 25% 8%; 
+    --foreground: 210 20% 98%;
+
+    --card: 240 25% 10%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 240 25% 10%;
+    --popover-foreground: 210 20% 98%;
+
+    /* Neon Purple - Main Brand */
+    --primary: 270 90% 65%;
+    --primary-foreground: 210 20% 98%;
+
+    /* Cyber Cyan - Secondary Brand */
+    --secondary: 190 100% 50%;
+    --secondary-foreground: 240 25% 10%;
+
+    --muted: 240 20% 15%;
+    --muted-foreground: 240 10% 65%;
+
+    /* Hot Pink Accent */
+    --accent: 320 100% 60%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 240 20% 20%;
+    --input: 240 20% 20%;
+    --ring: 270 90% 65%;
+
+    --radius: 0.25rem;
+    
+    --font-display: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    font-size: 18px;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply uppercase tracking-widest;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 10px hsl(var(--secondary) / 0.5), 0 0 20px hsl(var(--secondary) / 0.3);
+  }
+  .box-glow {
+    box-shadow: 0 0 15px hsl(var(--primary) / 0.2), inset 0 0 15px hsl(var(--primary) / 0.1);
+  }
+  .clip-tech {
+    clip-path: polygon(
+      0 0, 
+      100% 0, 
+      100% calc(100% - 20px), 
+      calc(100% - 20px) 100%, 
+      0 100%
+    );
+  }
+  .clip-tech-r {
+    clip-path: polygon(
+      20px 0, 
+      100% 0, 
+      100% 100%, 
+      0 100%, 
+      0 20px
+    );
+  }
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--secondary));
+}

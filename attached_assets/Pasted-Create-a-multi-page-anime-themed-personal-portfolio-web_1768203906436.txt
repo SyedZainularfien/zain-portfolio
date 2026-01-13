@@ -1,0 +1,28 @@
+Create a multi-page, anime-themed personal portfolio website for Syed Zainularfien, a Frontend / React & Next.js Developer with 3+ years of professional experience, using Next.js (App Router), TypeScript, and Tailwind CSS. The project must be frontend-only (no backend services, no databases, no authentication APIs).
+The website should feature a modern, cinematic anime aesthetic with high-quality anime character background images, anime illustrations, Lottie animations, subtle video loops, and animated UI elements inspired by popular anime (clean, sharp, energetic—not childish). Use a lightweight animation library such as Framer Motion or GSAP for page transitions, scroll animations, hover effects, and section reveals, keeping performance optimized.
+
+Pages & Content
+
+Home: Animated hero section introducing Syed Zainularfien – Frontend / Next.js Developer, anime-themed visuals, smooth entrance animations, a featured carousel, and a marquee showcasing tech stack.
+
+About Me: A storytelling-style section highlighting 3+ years of experience, strong frontend fundamentals, and passion for modern UI/UX, enhanced with anime backgrounds and motion effects.
+
+Skills: Display core skills including JavaScript (ES6+), TypeScript, React.js, Next.js, Tailwind CSS, Redux Toolkit, TanStack Query, animations, and modern frontend tooling using animated cards, progress indicators, and a scrolling marquee.
+
+Experience & Projects: Showcase professional and personal projects using anime-styled project cards, interactive carousels/sliders, hover effects, and smooth transitions. Emphasize scalable UI development, performance-focused design, and real-world frontend applications.
+
+Resume: Visually present resume information extracted from the uploaded resume (summary, skills, experience, and projects) using animated timelines and clean layouts.
+
+Contact: Frontend-only animated contact section (no form submission logic), styled consistently with the anime theme.
+
+UI & Architecture:
+
+Include carousels/sliders (for projects, featured sections, anime visuals) and marquee components (for skills, tools, technologies, or anime elements) with smooth, infinite animations.
+
+Use Redux Toolkit only where global UI state is necessary (theme toggle, navigation state, animation preferences).
+
+Use TanStack Query only for simulated/mock data fetching to demonstrate scalable frontend patterns (no real APIs).
+
+Ensure the site is fully responsive, SEO-friendly, accessible, and optimized for smooth animations and fast load times.
+
+Maintain a consistent anime visual identity across all pages with cohesive colors, typography, transitions, and motion design.
